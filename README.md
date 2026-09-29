@@ -1,12 +1,17 @@
-# ft_is_prime
+# Prime test
 
-This repository contains the implementation of the `ft_is_prime` function, a custom method for determining if a given integer is a prime number. Prime numbers are integers greater than 1 that have no divisors other than 1 and themselves. This function provides an efficient way to identify prime numbers, which is a fundamental concept in number theory and has applications in various areas of computer science, including cryptography.
+**42 C fundamentals** · Returns 1 for a prime integer and 0 otherwise, checking candidate divisors.
 
-## Function Overview
+## Build and use
 
-The `ft_is_prime` function checks whether a given integer `nb` is a prime number. It does so by attempting to divide `nb` by all integers from 2 up to half of `nb`, as no divisor larger than half of `nb` could possibly yield a whole number.
+```sh
+cc -Wall -Wextra -Werror -c ft_is_prime.c
+```
 
-### Function Prototype
+The command builds an object file; this repository has no standalone main program.
 
-```c
-int ft_is_prime(int nb);
+## Implementation note
+
+This is a function-only exercise. Inputs below 2 return 0; the straightforward half-range scan favors clarity over speed.
+
+Source: [`ft_is_prime.c`](ft_is_prime.c). [License](LICENSE).
